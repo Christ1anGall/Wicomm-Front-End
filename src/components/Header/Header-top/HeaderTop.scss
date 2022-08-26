@@ -1,0 +1,43 @@
+.container-HeaderTop {
+  padding: 0 12rem;
+  background: rgba(253, 253, 253, 1);
+  height: 2.362rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 22px;
+
+  .aside-HeaderTop {
+    display: flex;
+    gap: 32px;
+
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 22px;
+
+    .heart-person-HeaderTop {
+      height: 12px;
+      width: 14px;
+
+      margin-right: 8.55px;
+    }
+  }
+
+  .talkUS-HeaderTop {
+    text-decoration: none;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 22px;
+  }
+}

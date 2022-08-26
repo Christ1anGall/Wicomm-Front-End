@@ -1,0 +1,33 @@
+.container-HeaderBottom {
+  padding: 0 9.375rem;
+  height: 3.063rem;
+  color: white;
+  background: rgba(170, 130, 50, 1);
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  .button-HeaderBottom {
+    background: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    display: flex;
+
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+    font-family: "Open Sans";
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 22px;
+
+    svg {
+      margin-right: 16px;
+      height: 24px;
+      width: 24px;
+    }
+  }
+}

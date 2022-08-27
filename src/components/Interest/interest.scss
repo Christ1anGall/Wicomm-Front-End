@@ -1,0 +1,88 @@
+.interest-container {
+  margin-top: 76.5px;
+  display: flex;
+  flex-direction: column;
+
+  .interest-title {
+    font-family: "Oswald";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 46px;
+    line-height: 70px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+  }
+
+  &-img {
+    display: flex;
+    padding: 0 11.6rem;
+    gap: 24px;
+
+    .interest-firstElement,
+    .interest-secondElement,
+    .interest-thirdElement,
+    .interest-fourthElement {
+      max-height: 540px;
+      max-width: 267px;
+      position: relative;
+    }
+
+    .interest-firstElement-img,
+    .interest-secondElement-img,
+    .interest-thirdElement-img,
+    .interest-fourthElement-img {
+      max-height: 540px;
+      min-width: 267px;
+    }
+
+    .interest-firstElement-text,
+    .interest-secondElement-text {
+      display: flex;
+      align-items: center;
+      text-align: center;
+
+      letter-spacing: 2.90323px;
+      text-transform: uppercase;
+
+      font-family: "Oswald";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 31.9355px;
+      line-height: 68px;
+
+      color: white;
+      position: absolute;
+
+      display: flex;
+      left: 12%;
+      bottom: 0;
+
+      height: 34px;
+      width: 100%;
+    }
+
+    .interest-thirdElement-text,
+    .interest-fourthElement-text {
+      display: flex;
+      align-items: flex-end;
+
+      font-family: "Oswald";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 23.2258px;
+      line-height: 34px;
+
+      letter-spacing: 2.90323px;
+      text-transform: uppercase;
+
+      color: white;
+      position: absolute;
+      left: 30%;
+      bottom: 1.5%;
+      width: 50%;
+      height: 334px;
+
+      justify-content: baseline;
+    }
+  }
+}

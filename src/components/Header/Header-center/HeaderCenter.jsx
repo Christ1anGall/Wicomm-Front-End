@@ -6,7 +6,7 @@ import LogoSvgComponent from "./Logo/Logo";
 export const HeaderCenter = () => {
   return (
     <section className="container-HeaderCenter">
-      <LogoSvgComponent className={"Logo-HeaderCenter"} />
+      <LogoSvgComponent className="Logo-HeaderCenter" />
       <div className="search-container-HeaderCenter">
         <input
           type="text"

@@ -1,3 +1,51 @@
 .App {
   text-align: center;
 }
+.information-shop {
+  padding: 0 9.375rem;
+  background: #f5f6fa;
+  height: 117px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .card,
+  .truck,
+  .hinode,
+  .box {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+    height: 46px;
+    text-align: left;
+
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 23px;
+  }
+
+  .card {
+    width: 129px;
+  }
+  .truck {
+    width: 270px;
+  }
+  .hinode {
+    width: 224px;
+  }
+  .box {
+    width: 201px;
+  }
+}
+
+.newsProducts-main {
+  margin-top: 100px;
+  height: 816px;
+  display: flex;
+  background: #f8f8f8;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 45px;
+}

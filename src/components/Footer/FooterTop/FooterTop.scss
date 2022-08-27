@@ -1,0 +1,54 @@
+.footerTop {
+  padding: 0 13rem;
+  display: flex;
+  height: 152px;
+  background: #00002d;
+  color: white;
+
+  &-text {
+    max-width: 421px;
+    height: 88px;
+    text-align: left;
+    margin-right: 63px;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 44px;
+  }
+
+  &-form {
+    display: flex;
+    flex-direction: row;
+    gap: 18px;
+    align-items: center;
+
+    &-inputName,
+    &-inputEmail {
+      width: 207px;
+      background: transparent;
+      border: none;
+      border-bottom: 1px solid white;
+      color: #ffffff;
+
+      &::placeholder {
+        color: #ffffff;
+      }
+    }
+
+    &-button {
+      font-family: "Open Sans";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 11.7143px;
+      line-height: 18px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #ffffff;
+
+      width: 130px;
+      height: 48px;
+      background: #009baa;
+    }
+  }
+}

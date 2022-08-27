@@ -1,0 +1,92 @@
+.img-BeatyPortrait {
+  height: 790px;
+  display: flex;
+  background: #d5b69a;
+
+  .title-BeautyPortrait,
+  .button-BeautyPortrait,
+  .product-BeautyPortrait,
+  .woman-BeautyPortrait {
+    position: absolute;
+  }
+
+  .product-BeautyPortrait {
+    width: 401px;
+    height: 401px;
+    z-index: 10;
+    margin-top: 172px;
+    margin-left: 66px;
+  }
+
+  .woman-BeautyPortrait {
+    width: 1203px;
+    height: 789.92px;
+
+    margin-left: 104px;
+  }
+
+  .title-BeautyPortrait {
+    font-family: "Playfair Display";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 92.1471px;
+    line-height: 92px;
+
+    text-align: justify;
+    letter-spacing: -3.54412px;
+
+    color: #ffffff;
+
+    width: 513px;
+    height: 184px;
+
+    margin-top: 182px;
+    margin-left: 844px;
+  }
+
+  .button-BeautyPortrait {
+    margin-top: 397px;
+    margin-left: 855px;
+
+    background: transparent;
+    border: 2px solid white;
+    color: #ffffff;
+
+    width: 171px;
+    height: 50px;
+
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 11.7143px;
+    line-height: 18px;
+  }
+  .arrowIcon-Container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 60px;
+    align-items: center;
+
+    .arrowIcon {
+      height: 50px;
+      width: 50px;
+      color: white;
+      z-index: 200;
+    }
+  }
+
+  .positions {
+    display: flex;
+    width: 300px;
+    height: 10px;
+    z-index: 200;
+    color: white;
+    position: absolute;
+    margin-left: 648px;
+    margin-top: 736px;
+    gap: 30px;
+    align-items: center;
+  }
+}

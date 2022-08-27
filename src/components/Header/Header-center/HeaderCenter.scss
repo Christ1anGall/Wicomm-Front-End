@@ -1,13 +1,14 @@
 .container-HeaderCenter {
   display: flex;
-  padding: 0 11.7rem;
+  padding: 0 11.6rem;
   justify-content: space-between;
   height: 90px;
-
   align-items: center;
+
   .Logo-HeaderCenter {
     width: 13.5rem;
     height: 3rem;
+    margin-right: 88px;
   }
   .search-container-HeaderCenter {
     .search-HeaderCenter {
@@ -24,6 +25,7 @@
 
       padding-left: 1.438rem;
 
+      color: #333333;
       font-family: "Open Sans";
       font-style: normal;
       font-weight: 600;
@@ -48,8 +50,8 @@
     height: 37px;
 
     .IconLogin-HeaderCenter {
-      width: 16px;
-      height: 21px;
+      width: 1.5rem;
+      height: 1.5rem;
     }
 
     .LoginTextContainer-HeaderCenter {
@@ -73,7 +75,7 @@
         font-family: "Open Sans";
         font-style: normal;
         font-weight: 600;
-        font-size: 12px;
+        font-size: 11px;
         line-height: 22px;
 
         margin: 0;
@@ -85,7 +87,7 @@
   .shopContainer-HeaderCenter {
     display: flex;
     align-items: center;
-    gap: 11px;
+    gap: 8px;
   }
 
   .favContainer-HeaderCenter {

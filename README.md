@@ -16,7 +16,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - [@hookform/resolvers](https://github.com/react-hook-form/resolvers)
 
 
-<img src="https://img.shields.io/static/v1?label=REACT&message=18.2.0&color=7159c1&style=for-the-badge&logo=ghost"/><img src="https://img.shields.io/static/v1?label=SASS&message=1.54.5&color=7159c1&style=for-the-badge&logo=ghost"/><img src="https://img.shields.io/static/v1?label=react-hook-form&message=18.2.0&color=7159c1&style=for-the-badge&logo=ghost"/><img src="https://img.shields.io/static/v1?label=react-icons&message=1.54.5&color=7159c1&style=for-the-badge&logo=ghost"/><img src="https://img.shields.io/static/v1?label=yup&message=18.2.0&color=7159c1&style=for-the-badge&logo=ghost"/><img src="https://img.shields.io/static/v1?label=@hookform/resolvers&message=1.54.5&color=7159c1&style=for-the-badge&logo=ghost"/>
+<img src="https://img.shields.io/static/v1?label=REACT&message=18.2.0&color=7159c1&style=for-the-badge&logo=ghost"/><img src="https://img.shields.io/static/v1?label=SASS&message=1.54.5&color=7159c1&style=for-the-badge&logo=ghost"/><img src="https://img.shields.io/static/v1?label=react-hook-form&message=7.34.2&color=7159c1&style=for-the-badge&logo=ghost"/><img src="https://img.shields.io/static/v1?label=react-icons&message=4.4.0&color=7159c1&style=for-the-badge&logo=ghost"/><img src="https://img.shields.io/static/v1?label=yup&message=0.32.11&color=7159c1&style=for-the-badge&logo=ghost"/><img src="https://img.shields.io/static/v1?label=@hookform/resolvers&message=2.9.7&color=7159c1&style=for-the-badge&logo=ghost"/>
 
 ### Autor
 

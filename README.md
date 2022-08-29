@@ -10,8 +10,13 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 - [Sass](https://sass-lang.com/)
 - [React](https://pt-br.reactjs.org/)
+- [react-hook-form](https://react-hook-form.com/)
+- [react-icons](https://react-icons.github.io/react-icons/)
+- [yup](https://github.com/jquense/yup)
+- [@hookform/resolvers](https://github.com/react-hook-form/resolvers)
 
-<img src="https://img.shields.io/static/v1?label=REACT&message=18.2.0&color=7159c1&style=for-the-badge&logo=ghost"/><img src="https://img.shields.io/static/v1?label=SASS&message=1.54.5&color=7159c1&style=for-the-badge&logo=ghost"/>
+
+<img src="https://img.shields.io/static/v1?label=REACT&message=18.2.0&color=7159c1&style=for-the-badge&logo=ghost"/><img src="https://img.shields.io/static/v1?label=SASS&message=1.54.5&color=7159c1&style=for-the-badge&logo=ghost"/><img src="https://img.shields.io/static/v1?label=react-hook-form&message=18.2.0&color=7159c1&style=for-the-badge&logo=ghost"/><img src="https://img.shields.io/static/v1?label=react-icons&message=1.54.5&color=7159c1&style=for-the-badge&logo=ghost"/><img src="https://img.shields.io/static/v1?label=yup&message=18.2.0&color=7159c1&style=for-the-badge&logo=ghost"/><img src="https://img.shields.io/static/v1?label=@hookform/resolvers&message=1.54.5&color=7159c1&style=for-the-badge&logo=ghost"/>
 
 ### Autor
 

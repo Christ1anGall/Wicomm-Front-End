@@ -1,5 +1,5 @@
 import "./FooterCenter.scss";
-
+import React from "react";
 export const FooterCenter = () => {
   return (
     <div className="footerCenter">

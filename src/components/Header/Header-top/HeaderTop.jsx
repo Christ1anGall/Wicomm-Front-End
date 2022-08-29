@@ -1,4 +1,5 @@
 import "./HeaderTop.scss";
+import React from "react";
 import { RiUserHeartLine } from "react-icons/ri";
 export const HeaderTop = () => {
   return (

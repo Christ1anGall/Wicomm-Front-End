@@ -9,6 +9,8 @@
   justify-content: space-between;
   align-items: center;
 
+  margin-bottom: 96px;
+
   .card,
   .truck,
   .hinode,
@@ -39,13 +41,11 @@
     width: 201px;
   }
 }
-
 .newsProducts-main {
   margin-top: 100px;
   height: 816px;
-  display: flex;
+
   background: #f8f8f8;
-  align-items: center;
-  justify-content: center;
+  padding-top: 105px;
   padding-bottom: 45px;
 }

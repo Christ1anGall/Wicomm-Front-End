@@ -1,0 +1,79 @@
+.Empire-container {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 96px;
+
+  &-Empire {
+    min-width: 839px;
+    height: 868px;
+    background: url(./img/background.png);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    &-img-left,
+    &-img-right {
+      width: 520.13px;
+      height: 520.13px;
+      position: absolute;
+    }
+
+    &-img-left {
+      z-index: 1;
+      left: 0;
+    }
+    &-img-right {
+      left: 250px;
+      bottom: 130px;
+    }
+  }
+
+  &-Line {
+    width: 100%;
+    height: 868px;
+    background: rgba(247, 247, 247, 0.4);
+
+    text-align: left;
+
+    &-title {
+      margin-top: 255px;
+      margin-bottom: 0;
+      margin-left: 49px;
+      width: 372px;
+      font-family: "Playfair Display";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 92.1471px;
+      line-height: 92px;
+      letter-spacing: -3.54412px;
+      color: #000000;
+      text-align: left;
+    }
+    &-text {
+      text-align: left;
+      margin-left: 49px;
+      width: 400px;
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 33px;
+      color: #000000;
+    }
+    &-button {
+      font-family: "Open Sans";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 11.7143px;
+      line-height: 18px;
+      margin-left: 49px;
+      width: 249px;
+      height: 50px;
+      background: #000000;
+      color: white;
+      border: 1px solid #000000;
+    }
+  }
+}

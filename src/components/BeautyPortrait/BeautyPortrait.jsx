@@ -1,7 +1,7 @@
 import brushEye from "./img/brush-eye.png";
 import image_152 from "./img/image_152.png";
 import "./BeautyPortrait.scss";
-
+import React from "react";
 import {
   MdOutlineArrowBackIos,
   MdOutlineArrowForwardIos,

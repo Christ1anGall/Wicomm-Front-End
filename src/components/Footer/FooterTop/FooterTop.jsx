@@ -1,8 +1,9 @@
 import { yupResolver } from "@hookform/resolvers/yup";
-import { AdobeFonts } from "react-adobe-fonts";
+
 import { useForm } from "react-hook-form";
 import { schema } from "./schema";
 import "./FooterTop.scss";
+import React from "react";
 
 export const FooterTop = () => {
   const {

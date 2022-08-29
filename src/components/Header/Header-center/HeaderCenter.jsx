@@ -2,7 +2,7 @@ import "./HeaderCenter.scss";
 import { BiSearch, BiHeart } from "react-icons/bi";
 import { RiUserLine, RiShoppingBagLine } from "react-icons/ri";
 import LogoSvgComponent from "./Logo/Logo";
-
+import React from "react";
 export const HeaderCenter = () => {
   return (
     <section className="container-HeaderCenter">

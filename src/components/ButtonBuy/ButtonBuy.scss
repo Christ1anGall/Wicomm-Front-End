@@ -1,0 +1,13 @@
+.ButtonBuy {
+  color: #f2994a;
+  width: 268px;
+  height: 58px;
+  border: 2px solid #f2994a;
+  margin-top: 16px;
+  cursor: pointer;
+
+  &:hover {
+    background: #f2994a;
+    color: white;
+  }
+}

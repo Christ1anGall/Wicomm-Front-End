@@ -1,21 +1,32 @@
-import "./App.scss";
 import { BeautyPortrait } from "./components/BeautyPortrait/BeautyPortrait";
-
-import Header from "./components/Header/Header";
-import { Products } from "./components/products/Products";
 import esponja from "./components/products/img/image153.png";
-import po from "./components/products/img/image154.png";
 import grace from "./components/products/img/image146.png";
+import { Products } from "./components/products/Products";
 import base from "./components/products/img/image144.png";
 import { Interest } from "./components/Interest/interest";
-import { FooterTop } from "./components/Footer/FooterTop/FooterTop";
-import { FooterCenter } from "./components/Footer/FooterCenter/FooterCenter";
-import { FooterBottom } from "./components/Footer/FooterBottom/FooterBottom";
+import po from "./components/products/img/image154.png";
+import Header from "./components/Header/Header";
+import "./App.scss";
+import Footer from "./components/Footer/Footer";
+import { MultiVit } from "./components/MultiVit/MultiVit";
+import React, { useRef } from "react";
+import { BodyAndShower } from "./components/BodyAndShower/BodyAndShower";
+import { Empire } from "./components/Empire/Empire";
 
 function App() {
+  const FragRef = useRef(null);
+
+  const gotoFrag = () => {
+    /*    FragRef.current.scrollIntoView(); */
+    window.scrollTo({
+      top: FragRef.current.offsetTop,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <div className="App">
-      <Header />
+      <Header gotoFrag={gotoFrag} />
       <BeautyPortrait />
       <section className="information-shop">
         <div className="card">
@@ -128,6 +139,7 @@ function App() {
         Products2={[]}
       />
       <Interest />
+      <MultiVit />
       <Products
         title={"os mais desejados"}
         Products={[
@@ -212,6 +224,7 @@ function App() {
         ]}
         Products2={[]}
       />
+      <BodyAndShower />
       <Products
         title={"corpo e banho"}
         Products={[
@@ -252,9 +265,52 @@ function App() {
             price: 89.9,
           },
         ]}
-        Products2={[]}
+        Products2={[
+          {
+            title: "Esponja 3D Dazzle",
+            img: esponja,
+            promotion: {
+              status: true,
+              price: 29.9,
+            },
+            price: 89.9,
+          },
+          {
+            title: "Base Líquida Hyaluronic Hydra Dazzle Escuro 2 - 500g",
+            img: base,
+            promotion: {
+              status: false,
+              price: 29.9,
+            },
+            price: 89.9,
+          },
+          {
+            title: "Grace La Rose Sublime Deo Colônia Pocket 15ml",
+            img: grace,
+            promotion: {
+              status: false,
+              price: 29.9,
+            },
+            price: 89.9,
+          },
+          {
+            title: "Pó Compacto HD Cover Claro 2 Dazzle - 12g",
+            img: po,
+            promotion: {
+              status: false,
+              price: 29.9,
+            },
+            price: 89.9,
+          },
+        ]}
       />
+      <Empire />
+      {localStorage.setItem(
+        "MADE BY CHRISTIAN GALL",
+        "    MADE BY CHRISTIAN GALL"
+      )}
       <Products
+        FragRef={FragRef}
         title={"fragrâncias"}
         Products={[
           {
@@ -294,7 +350,44 @@ function App() {
             price: 89.9,
           },
         ]}
-        Products2={[]}
+        Products2={[
+          {
+            title: "Esponja 3D Dazzle",
+            img: esponja,
+            promotion: {
+              status: true,
+              price: 29.9,
+            },
+            price: 89.9,
+          },
+          {
+            title: "Base Líquida Hyaluronic Hydra Dazzle Escuro 2 - 500g",
+            img: base,
+            promotion: {
+              status: false,
+              price: 29.9,
+            },
+            price: 89.9,
+          },
+          {
+            title: "Grace La Rose Sublime Deo Colônia Pocket 15ml",
+            img: grace,
+            promotion: {
+              status: false,
+              price: 29.9,
+            },
+            price: 89.9,
+          },
+          {
+            title: "Pó Compacto HD Cover Claro 2 Dazzle - 12g",
+            img: po,
+            promotion: {
+              status: false,
+              price: 29.9,
+            },
+            price: 89.9,
+          },
+        ]}
       />
       <div className="newsProducts-main">
         <Products
@@ -340,9 +433,7 @@ function App() {
           Products2={[]}
         />
       </div>
-      <FooterTop />
-      <FooterCenter />
-      <FooterBottom />
+      <Footer />
     </div>
   );
 }

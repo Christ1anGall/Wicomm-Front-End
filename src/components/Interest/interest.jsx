@@ -1,8 +1,5 @@
 import "./interest.scss";
-import beautifulWoman from "./img/beautifulWoman.png";
-import closeUp from "./img/closeUp.png";
-import muscularMan from "./img/muscularMan.png";
-import womanPreparing from "./img/womanPreparing.png";
+import React from "react";
 
 export const Interest = () => {
   return (
@@ -10,33 +7,33 @@ export const Interest = () => {
       <h2 className="interest-title">isso pode ser do seu interesse</h2>
       <div className="interest-container-img">
         <div className="interest-firstElement">
-          <img
-            className="interest-firstElement-img"
-            src={beautifulWoman}
-            alt=""
-          />
           <p className="interest-firstElement-text">maquiagens</p>
+          <a className="interest-firstElement-link" href="">
+            VER MAIS
+          </a>
         </div>
 
         <div className="interest-secondElement">
-          <img
-            className="interest-secondElement-img"
-            src={womanPreparing}
-            alt=""
-          />
           <p className="interest-secondElement-text">fragrâncias</p>
+          <a className="interest-secondElement-link" href="">
+            VER MAIS
+          </a>
         </div>
 
         <div className="interest-thirdElement">
-          <img className="interest-thirdElement-img" src={muscularMan} alt="" />
           <p className="interest-thirdElement-text">
             {"energia & performance"}
           </p>
+          <a className="interest-thirdElement-link" href="">
+            VER MAIS
+          </a>
         </div>
 
         <div className="interest-fourthElement">
-          <img className="interest-fourthElement-img" src={closeUp} alt="" />
           <p className="interest-fourthElement-text">{"corpo & banho"}</p>
+          <a className="interest-fourthElement-link" href="">
+            VER MAIS
+          </a>
         </div>
       </div>
     </section>

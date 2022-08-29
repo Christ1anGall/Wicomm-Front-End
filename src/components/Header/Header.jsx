@@ -1,14 +1,15 @@
 import { HeaderBottom } from "./Header-bottom/HeaderBottom";
 import { HeaderCenter } from "./Header-center/HeaderCenter";
 import { HeaderTop } from "./Header-top/HeaderTop";
+import React from "react";
 
-function Header() {
+function Header({ gotoFrag }) {
   return (
-    <>
+    <header>
       <HeaderTop />
       <HeaderCenter />
-      <HeaderBottom />
-    </>
+      <HeaderBottom gotoFrag={gotoFrag} />
+    </header>
   );
 }
 

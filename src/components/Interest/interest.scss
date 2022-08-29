@@ -1,8 +1,9 @@
 .interest-container {
-  margin-top: 76.5px;
   display: flex;
-  flex-direction: column;
 
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 25px;
   .interest-title {
     font-family: "Oswald";
     font-style: normal;
@@ -15,10 +16,10 @@
 
   &-img {
     display: flex;
-    padding: 0 11.6rem;
+    justify-content: space-around;
+    margin: 0 auto;
     gap: 24px;
 
-    .interest-firstElement,
     .interest-secondElement,
     .interest-thirdElement,
     .interest-fourthElement {
@@ -54,17 +55,73 @@
       position: absolute;
 
       display: flex;
-      left: 12%;
+      left: 15%;
       bottom: 0;
 
       height: 34px;
       width: 100%;
     }
 
+    .interest-firstElement {
+      min-height: 540px;
+      min-width: 267px;
+      position: relative;
+      background: url(./img/beautifulWoman.png);
+
+      &-link {
+        display: none;
+        color: white;
+      }
+
+      &:hover {
+        .interest-firstElement-text {
+          animation-name: slidein;
+          animation-duration: 1s;
+          animation-fill-mode: forwards;
+        }
+
+        .interest-firstElement-link {
+          display: flex;
+          text-align: center;
+          justify-content: center;
+          align-items: center;
+          margin-top: 110%;
+        }
+      }
+    }
+
+    .interest-secondElement {
+      min-height: 540px;
+      min-width: 267px;
+      position: relative;
+      background: url(./img/womanPreparing.png);
+
+      &-link {
+        display: none;
+        color: white;
+      }
+
+      &:hover {
+        .interest-secondElement-text {
+          animation-name: slidein;
+          animation-duration: 1s;
+          animation-fill-mode: forwards;
+        }
+        .interest-secondElement-link {
+          display: flex;
+          text-align: center;
+          justify-content: center;
+          align-items: center;
+          margin-top: 110%;
+        }
+      }
+    }
+
     .interest-thirdElement-text,
     .interest-fourthElement-text {
       display: flex;
       align-items: flex-end;
+      display: flex;
 
       font-family: "Oswald";
       font-style: normal;
@@ -77,12 +134,78 @@
 
       color: white;
       position: absolute;
-      left: 30%;
-      bottom: 1.5%;
+      margin: 0;
       width: 50%;
-      height: 334px;
+      height: 100%;
 
-      justify-content: baseline;
+      left: 26%;
+      bottom: 4.5%;
+      justify-content: center;
     }
+
+    .interest-thirdElement {
+      min-height: 540px;
+      min-width: 267px;
+      position: relative;
+      background: url(./img/muscularMan.png);
+
+      &-link {
+        display: none;
+        color: white;
+      }
+
+      &:hover {
+        .interest-thirdElement-text {
+          animation-name: slidein;
+          animation-duration: 1s;
+          animation-fill-mode: forwards;
+        }
+        .interest-thirdElement-link {
+          display: flex;
+          text-align: center;
+          justify-content: center;
+          align-items: center;
+          margin-top: 110%;
+        }
+      }
+    }
+
+    .interest-fourthElement {
+      min-height: 540px;
+      min-width: 267px;
+      position: relative;
+
+      background-image: url(./img/closeUp.png);
+
+      &-link {
+        display: none;
+        color: white;
+      }
+
+      &:hover {
+        .interest-fourthElement-text {
+          animation-name: slidein;
+          animation-duration: 1s;
+          animation-fill-mode: forwards;
+        }
+        .interest-fourthElement-link {
+          display: flex;
+          text-align: center;
+          justify-content: center;
+          align-items: center;
+          margin-top: 110%;
+        }
+      }
+    }
+  }
+}
+
+@keyframes slidein {
+  from {
+    bottom: 1.5%;
+  }
+
+  to {
+    bottom: 45%;
   }
 }

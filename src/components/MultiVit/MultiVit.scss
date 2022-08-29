@@ -1,0 +1,174 @@
+.MultiVit-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 0 160px;
+  align-items: center;
+  margin-top: 117px;
+  padding-left: 26px;
+  &-left {
+    width: 557px;
+    height: 781px;
+    position: relative;
+
+    &-details {
+      position: absolute;
+      margin-left: 12px;
+      margin-top: 12px;
+
+      padding: 18px 0px 0 15px;
+      background: #ffffff;
+      box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.25);
+      border-radius: 16px;
+      width: 205px;
+      height: 165px;
+      text-align: left;
+
+      &-title {
+        font-family: "Oswald";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 23px;
+        margin: 0;
+        white-space: nowrap;
+      }
+      &-description {
+        font-family: "Oswald";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 23px;
+        margin: 0;
+        margin-bottom: 15px;
+      }
+      &-stars {
+        .star-MultiVit {
+          color: #009baa;
+          margin-bottom: 8.62px;
+        }
+      }
+      &-price {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 22px;
+        margin: 0;
+        margin-bottom: 15px;
+      }
+      &-creditDetails {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 10px;
+        line-height: 18px;
+        margin: 0;
+      }
+    }
+
+    &-img {
+      width: 557px;
+      height: 781px;
+    }
+
+    .MultiVit-button {
+      position: absolute;
+      width: 100%;
+      bottom: 5%;
+    }
+  }
+
+  &-right {
+    width: 557px;
+    height: 781px;
+    position: relative;
+
+    &-details {
+      position: absolute;
+      margin-left: 12px;
+      margin-top: 12px;
+      padding: 18px 0px 0 15px;
+      background: #ffffff;
+      box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.25);
+      border-radius: 16px;
+      width: 205px;
+      height: 165px;
+      text-align: left;
+
+      &-title {
+        font-family: "Oswald";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 23px;
+        margin: 0;
+        white-space: nowrap;
+      }
+      &-description {
+        font-family: "Oswald";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 23px;
+        margin: 0;
+        margin-bottom: 15px;
+      }
+      &-stars {
+        .star-MultiVit {
+          color: #009baa;
+          margin-bottom: 8.62px;
+        }
+      }
+      &-price {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 22px;
+        margin: 0;
+        margin-bottom: 15px;
+      }
+      &-creditDetails {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 10px;
+        line-height: 18px;
+        margin: 0;
+      }
+    }
+    &-img {
+      width: 557px;
+      height: 781px;
+    }
+    .MultiVit-button {
+      position: absolute;
+      width: 100%;
+      bottom: 5%;
+    }
+  }
+
+  .arrowIcon-Container-MultiVit {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+
+    .arrowIcon-MultiVit {
+      height: 40px;
+      width: 40px;
+      padding: 0 60px;
+      color: #bdbdbd;
+      cursor: pointer;
+    }
+  }
+}
+.positions-products,
+.first-positions-products {
+  display: flex;
+  justify-content: center;
+  color: #aa8232;
+  height: 20px;
+  margin-top: 60px;
+  margin-bottom: 80px;
+  gap: 30px;
+  align-items: center;
+  cursor: pointer;
+}

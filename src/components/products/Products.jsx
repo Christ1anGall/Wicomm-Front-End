@@ -5,11 +5,13 @@ import {
   MdOutlineArrowBackIosNew,
   MdOutlineArrowForwardIos,
 } from "react-icons/md";
+import { ButtonBuy } from "../ButtonBuy/ButtonBuy";
 import "./Products.scss";
+import React from "react";
 
-export const Products = ({ title, Products, Products2 }) => {
+export const Products = ({ title, Products, Products2, FragRef }) => {
   return (
-    <div className="container">
+    <div ref={FragRef} className="container">
       <div className="container-title">
         <h2 className="title">{title}</h2>
 
@@ -39,7 +41,6 @@ export const Products = ({ title, Products, Products2 }) => {
                   <img src={product.img} alt="" />
                   <BiHeart className="heart-product" />
                 </div>
-
                 <p className="product-title">{product.title}</p>
                 <div className="starContainer-product">
                   <BsFillStarFill className="star-product" />
@@ -57,7 +58,7 @@ export const Products = ({ title, Products, Products2 }) => {
                     ? product.promotion.price
                     : product.price}
                 </p>
-                <button className="product-button">COMPRAR</button>
+                <ButtonBuy id={"2"} />
               </li>
             </>
           );
@@ -113,7 +114,7 @@ export const Products = ({ title, Products, Products2 }) => {
                         ? product.promotion.price
                         : product.price}
                     </p>
-                    <button className="product-button">COMPRAR</button>
+                    <ButtonBuy id={"2"} />
                   </li>
                 </>
               );
@@ -136,7 +137,7 @@ export const Products = ({ title, Products, Products2 }) => {
             <IoEllipseOutline className="positions-products" />
             <IoEllipseOutline className="positions-products" />
           </div>
-          <div className="arrowIcon-Container-products">
+          <div className="arrowIcon-Container-products2">
             <MdOutlineArrowBackIosNew className="arrowIcon-products" />
             <MdOutlineArrowForwardIos className="arrowIcon-products" />
           </div>

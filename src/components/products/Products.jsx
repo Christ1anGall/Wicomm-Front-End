@@ -7,9 +7,47 @@ import {
 } from "react-icons/md";
 import { ButtonBuy } from "../ButtonBuy/ButtonBuy";
 import "./Products.scss";
-import React from "react";
+import React, { useRef, useState } from "react";
 
 export const Products = ({ title, Products, Products2, FragRef }) => {
+  const scrollProducts1 = useRef(null);
+  const [position1, setPosition1] = useState(0);
+
+  const scrollProducts2 = useRef(null);
+  const [position2, setPosition2] = useState(0);
+
+  function toLeft1() {
+    console.log(scrollProducts1.current.offsetWidth / 3);
+    let value = position1 === 0 ? 0 : -1;
+    setPosition1(position1 + value);
+    scrollProducts1.current.scrollLeft -=
+      scrollProducts1.current.offsetWidth / 3;
+  }
+
+  function toRigth1() {
+    console.log(scrollProducts1.current.offsetWidth / 3);
+    let value = position1 === 3 ? 0 : 1;
+    setPosition1(position1 + value);
+    scrollProducts1.current.scrollLeft +=
+      scrollProducts1.current.offsetWidth / 3;
+  }
+
+  function toLeft2() {
+    console.log(position2);
+    let value = position2 === 0 ? 0 : -1;
+    setPosition2(position2 + value);
+    scrollProducts2.current.scrollLeft -=
+      scrollProducts2.current.offsetWidth / 3;
+  }
+
+  function toRigth2() {
+    console.log(position2);
+    let value = position2 === 3 ? 0 : 1;
+    setPosition2(position2 + value);
+    scrollProducts2.current.scrollLeft +=
+      scrollProducts2.current.offsetWidth / 3;
+  }
+
   return (
     <div ref={FragRef} className="container">
       <div className="container-title">
@@ -32,7 +70,7 @@ export const Products = ({ title, Products, Products2, FragRef }) => {
         </div>
       </div>
 
-      <ul className="container-products">
+      <ul className="container-products" ref={scrollProducts1}>
         {Products.map((product, index) => {
           return (
             <>
@@ -65,33 +103,80 @@ export const Products = ({ title, Products, Products2, FragRef }) => {
         })}
       </ul>
       <div className="positions-products">
-        <div className="first-positions-products">
-          <svg
-            width="23"
-            height="12"
-            viewBox="0 0 23 12"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <rect width="22.5" height="12" rx="6" fill="#aa8232" />
-          </svg>
-        </div>
+        {position1 === 0 && (
+          <div className="first-positions-products">
+            <svg
+              width="23"
+              height="12"
+              viewBox="0 0 23 12"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect width="22.5" height="12" rx="6" fill="#aa8232" />
+            </svg>
+          </div>
+        )}
         <IoEllipseOutline className="positions-products" />
+        {position1 === 1 && (
+          <div className="first-positions-products">
+            <svg
+              width="23"
+              height="12"
+              viewBox="0 0 23 12"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect width="22.5" height="12" rx="6" fill="#aa8232" />
+            </svg>
+          </div>
+        )}
         <IoEllipseOutline className="positions-products" />
+        {position1 === 2 && (
+          <div className="first-positions-products">
+            <svg
+              width="23"
+              height="12"
+              viewBox="0 0 23 12"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect width="22.5" height="12" rx="6" fill="#aa8232" />
+            </svg>
+          </div>
+        )}
         <IoEllipseOutline className="positions-products" />
+        {position1 === 3 && (
+          <div className="first-positions-products">
+            <svg
+              width="23"
+              height="12"
+              viewBox="0 0 23 12"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect width="22.5" height="12" rx="6" fill="#aa8232" />
+            </svg>
+          </div>
+        )}
       </div>
       <div className="arrowIcon-Container-products">
-        <MdOutlineArrowBackIosNew className="arrowIcon-products" />
-        <MdOutlineArrowForwardIos className="arrowIcon-products" />
+        <MdOutlineArrowBackIosNew
+          onClick={toLeft1}
+          className="arrowIcon-products"
+        />
+        <MdOutlineArrowForwardIos
+          onClick={toRigth1}
+          className="arrowIcon-products"
+        />
       </div>
 
       {Products2.length > 0 && (
         <>
-          <ul className="container-products">
+          <ul className="container-products" ref={scrollProducts2}>
             {Products2.map((product, index) => {
               return (
                 <>
-                  <li key={index}>
+                  <li key={index + 10}>
                     <div className="imageContainer-products">
                       <img src={product.img} alt="" />
                       <BiHeart className="heart-product" />
@@ -114,7 +199,7 @@ export const Products = ({ title, Products, Products2, FragRef }) => {
                         ? product.promotion.price
                         : product.price}
                     </p>
-                    <ButtonBuy id={"2"} />
+                    <ButtonBuy id={"Products1"} />
                   </li>
                 </>
               );
@@ -122,24 +207,71 @@ export const Products = ({ title, Products, Products2, FragRef }) => {
           </ul>
 
           <div className="positions-products">
-            <div className="first-positions-products">
-              <svg
-                width="23"
-                height="12"
-                viewBox="0 0 23 12"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <rect width="22.5" height="12" rx="6" fill="#aa8232" />
-              </svg>
-            </div>
+            {position2 === 0 && (
+              <div className="first-positions-products">
+                <svg
+                  width="23"
+                  height="12"
+                  viewBox="0 0 23 12"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect width="22.5" height="12" rx="6" fill="#aa8232" />
+                </svg>
+              </div>
+            )}
             <IoEllipseOutline className="positions-products" />
+            {position2 === 1 && (
+              <div className="first-positions-products">
+                <svg
+                  width="23"
+                  height="12"
+                  viewBox="0 0 23 12"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect width="22.5" height="12" rx="6" fill="#aa8232" />
+                </svg>
+              </div>
+            )}
             <IoEllipseOutline className="positions-products" />
+            {position2 === 2 && (
+              <div className="first-positions-products">
+                <svg
+                  width="23"
+                  height="12"
+                  viewBox="0 0 23 12"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect width="22.5" height="12" rx="6" fill="#aa8232" />
+                </svg>
+              </div>
+            )}
             <IoEllipseOutline className="positions-products" />
+            {position2 === 3 && (
+              <div className="first-positions-products">
+                <svg
+                  width="23"
+                  height="12"
+                  viewBox="0 0 23 12"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect width="22.5" height="12" rx="6" fill="#aa8232" />
+                </svg>
+              </div>
+            )}
           </div>
           <div className="arrowIcon-Container-products2">
-            <MdOutlineArrowBackIosNew className="arrowIcon-products" />
-            <MdOutlineArrowForwardIos className="arrowIcon-products" />
+            <MdOutlineArrowBackIosNew
+              onClick={toLeft2}
+              className="arrowIcon-products"
+            />
+            <MdOutlineArrowForwardIos
+              onClick={toRigth2}
+              className="arrowIcon-products"
+            />
           </div>
         </>
       )}

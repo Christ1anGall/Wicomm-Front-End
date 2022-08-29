@@ -1,13 +1,13 @@
 import "./ButtonBuy.scss";
 import React from "react";
 export const ButtonBuy = ({ id }) => {
-  function onClick(data) {
+  function onClick() {
     //requisição passando o ID do elemento clicado
-    console.log(data);
+    console.log(id);
   }
 
   return (
-    <button onClick={onClick(id)} className="ButtonBuy">
+    <button onClick={onClick} className="ButtonBuy">
       COMPRAR
     </button>
   );

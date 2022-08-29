@@ -135,6 +135,42 @@ function App() {
             },
             price: 89.9,
           },
+          {
+            title: "Esponja 3D Dazzle",
+            img: esponja,
+            promotion: {
+              status: true,
+              price: 29.9,
+            },
+            price: 89.9,
+          },
+          {
+            title: "Base Líquida Hyaluronic Hydra Dazzle Escuro 2 - 500g",
+            img: base,
+            promotion: {
+              status: false,
+              price: 29.9,
+            },
+            price: 89.9,
+          },
+          {
+            title: "Grace La Rose Sublime Deo Colônia Pocket 15ml",
+            img: grace,
+            promotion: {
+              status: false,
+              price: 29.9,
+            },
+            price: 89.9,
+          },
+          {
+            title: "Pó Compacto HD Cover Claro 2 Dazzle - 12g",
+            img: po,
+            promotion: {
+              status: false,
+              price: 29.9,
+            },
+            price: 89.9,
+          },
         ]}
         Products2={[]}
       />
@@ -179,12 +215,84 @@ function App() {
             },
             price: 89.9,
           },
+          {
+            title: "Esponja 3D Dazzle",
+            img: esponja,
+            promotion: {
+              status: true,
+              price: 29.9,
+            },
+            price: 89.9,
+          },
+          {
+            title: "Base Líquida Hyaluronic Hydra Dazzle Escuro 2 - 500g",
+            img: base,
+            promotion: {
+              status: false,
+              price: 29.9,
+            },
+            price: 89.9,
+          },
+          {
+            title: "Grace La Rose Sublime Deo Colônia Pocket 15ml",
+            img: grace,
+            promotion: {
+              status: false,
+              price: 29.9,
+            },
+            price: 89.9,
+          },
+          {
+            title: "Pó Compacto HD Cover Claro 2 Dazzle - 12g",
+            img: po,
+            promotion: {
+              status: false,
+              price: 29.9,
+            },
+            price: 89.9,
+          },
         ]}
         Products2={[]}
       />
       <Products
         title={"vida saudável"}
         Products={[
+          {
+            title: "Esponja 3D Dazzle",
+            img: esponja,
+            promotion: {
+              status: true,
+              price: 29.9,
+            },
+            price: 89.9,
+          },
+          {
+            title: "Base Líquida Hyaluronic Hydra Dazzle Escuro 2 - 500g",
+            img: base,
+            promotion: {
+              status: false,
+              price: 29.9,
+            },
+            price: 89.9,
+          },
+          {
+            title: "Grace La Rose Sublime Deo Colônia Pocket 15ml",
+            img: grace,
+            promotion: {
+              status: false,
+              price: 29.9,
+            },
+            price: 89.9,
+          },
+          {
+            title: "Pó Compacto HD Cover Claro 2 Dazzle - 12g",
+            img: po,
+            promotion: {
+              status: false,
+              price: 29.9,
+            },
+            price: 89.9,
+          },
           {
             title: "Esponja 3D Dazzle",
             img: esponja,
@@ -264,8 +372,80 @@ function App() {
             },
             price: 89.9,
           },
+          {
+            title: "Esponja 3D Dazzle",
+            img: esponja,
+            promotion: {
+              status: true,
+              price: 29.9,
+            },
+            price: 89.9,
+          },
+          {
+            title: "Base Líquida Hyaluronic Hydra Dazzle Escuro 2 - 500g",
+            img: base,
+            promotion: {
+              status: false,
+              price: 29.9,
+            },
+            price: 89.9,
+          },
+          {
+            title: "Grace La Rose Sublime Deo Colônia Pocket 15ml",
+            img: grace,
+            promotion: {
+              status: false,
+              price: 29.9,
+            },
+            price: 89.9,
+          },
+          {
+            title: "Pó Compacto HD Cover Claro 2 Dazzle - 12g",
+            img: po,
+            promotion: {
+              status: false,
+              price: 29.9,
+            },
+            price: 89.9,
+          },
         ]}
         Products2={[
+          {
+            title: "Esponja 3D Dazzle",
+            img: esponja,
+            promotion: {
+              status: true,
+              price: 29.9,
+            },
+            price: 89.9,
+          },
+          {
+            title: "Base Líquida Hyaluronic Hydra Dazzle Escuro 2 - 500g",
+            img: base,
+            promotion: {
+              status: false,
+              price: 29.9,
+            },
+            price: 89.9,
+          },
+          {
+            title: "Grace La Rose Sublime Deo Colônia Pocket 15ml",
+            img: grace,
+            promotion: {
+              status: false,
+              price: 29.9,
+            },
+            price: 89.9,
+          },
+          {
+            title: "Pó Compacto HD Cover Claro 2 Dazzle - 12g",
+            img: po,
+            promotion: {
+              status: false,
+              price: 29.9,
+            },
+            price: 89.9,
+          },
           {
             title: "Esponja 3D Dazzle",
             img: esponja,
@@ -349,8 +529,80 @@ function App() {
             },
             price: 89.9,
           },
+          {
+            title: "Esponja 3D Dazzle",
+            img: esponja,
+            promotion: {
+              status: true,
+              price: 29.9,
+            },
+            price: 89.9,
+          },
+          {
+            title: "Base Líquida Hyaluronic Hydra Dazzle Escuro 2 - 500g",
+            img: base,
+            promotion: {
+              status: false,
+              price: 29.9,
+            },
+            price: 89.9,
+          },
+          {
+            title: "Grace La Rose Sublime Deo Colônia Pocket 15ml",
+            img: grace,
+            promotion: {
+              status: false,
+              price: 29.9,
+            },
+            price: 89.9,
+          },
+          {
+            title: "Pó Compacto HD Cover Claro 2 Dazzle - 12g",
+            img: po,
+            promotion: {
+              status: false,
+              price: 29.9,
+            },
+            price: 89.9,
+          },
         ]}
         Products2={[
+          {
+            title: "Esponja 3D Dazzle",
+            img: esponja,
+            promotion: {
+              status: true,
+              price: 29.9,
+            },
+            price: 89.9,
+          },
+          {
+            title: "Base Líquida Hyaluronic Hydra Dazzle Escuro 2 - 500g",
+            img: base,
+            promotion: {
+              status: false,
+              price: 29.9,
+            },
+            price: 89.9,
+          },
+          {
+            title: "Grace La Rose Sublime Deo Colônia Pocket 15ml",
+            img: grace,
+            promotion: {
+              status: false,
+              price: 29.9,
+            },
+            price: 89.9,
+          },
+          {
+            title: "Pó Compacto HD Cover Claro 2 Dazzle - 12g",
+            img: po,
+            promotion: {
+              status: false,
+              price: 29.9,
+            },
+            price: 89.9,
+          },
           {
             title: "Esponja 3D Dazzle",
             img: esponja,
@@ -393,6 +645,42 @@ function App() {
         <Products
           title={"acabaram de chegar"}
           Products={[
+            {
+              title: "Esponja 3D Dazzle",
+              img: esponja,
+              promotion: {
+                status: true,
+                price: 29.9,
+              },
+              price: 89.9,
+            },
+            {
+              title: "Base Líquida Hyaluronic Hydra Dazzle Escuro 2 - 500g",
+              img: base,
+              promotion: {
+                status: false,
+                price: 29.9,
+              },
+              price: 89.9,
+            },
+            {
+              title: "Grace La Rose Sublime Deo Colônia Pocket 15ml",
+              img: grace,
+              promotion: {
+                status: false,
+                price: 29.9,
+              },
+              price: 89.9,
+            },
+            {
+              title: "Pó Compacto HD Cover Claro 2 Dazzle - 12g",
+              img: po,
+              promotion: {
+                status: false,
+                price: 29.9,
+              },
+              price: 89.9,
+            },
             {
               title: "Esponja 3D Dazzle",
               img: esponja,
